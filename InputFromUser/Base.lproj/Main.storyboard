@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InputFromUser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MyUITextField" customModule="InputFromUser" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6f-Kl-O55">
+                                <rect key="frame" x="8" y="354" width="359" height="45"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.32941176470588235" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mT7-ni-zhW"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="A6a-5c-C1A">
+                                <rect key="frame" x="8" y="227" width="359" height="115"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="keF-Ff-NW8">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rgA-fo-zrh" customClass="MyUITextField" customModule="InputFromUser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="359" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9Aq-gD-hZ2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rgA-fo-zrh" firstAttribute="height" secondItem="keF-Ff-NW8" secondAttribute="height" id="DqL-YS-nsU"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ab5-2b-XU2">
+                                <rect key="frame" x="8" y="461" width="359" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPp-af-X73">
+                                        <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="45"/>
+                                        <color key="backgroundColor" red="0.13009671227266068" green="0.65861248158589858" blue="0.51671554478561943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Ifj-aD-y8H"/>
+                                        </constraints>
+                                        <state key="normal" title="LIVE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-aU-JkG">
+                                        <rect key="frame" x="187.33333333333337" y="0.0" width="171.66666666666663" height="45"/>
+                                        <color key="backgroundColor" red="0.58273684211466137" green="0.53521435820913299" blue="0.75717951526465499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="DEMO">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bz3-aU-JkG" firstAttribute="height" secondItem="BPp-af-X73" secondAttribute="height" id="B9W-fv-dCV"/>
+                                    <constraint firstItem="bz3-aU-JkG" firstAttribute="width" secondItem="BPp-af-X73" secondAttribute="width" id="NVT-vz-UHJ"/>
+                                </constraints>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xei-1P-tNd">
+                                <rect key="frame" x="166.66666666666666" y="140" width="41.666666666666657" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N6f-Kl-O55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="1Ms-as-h2t"/>
+                            <constraint firstItem="xei-1P-tNd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="2lL-9R-sAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ab5-2b-XU2" secondAttribute="trailing" constant="8" id="FWK-tD-B92"/>
+                            <constraint firstItem="N6f-Kl-O55" firstAttribute="centerX" secondItem="xei-1P-tNd" secondAttribute="centerX" id="Kkz-np-SDQ"/>
+                            <constraint firstItem="N6f-Kl-O55" firstAttribute="top" secondItem="A6a-5c-C1A" secondAttribute="bottom" constant="12" id="Ld4-vw-Wgr"/>
+                            <constraint firstItem="A6a-5c-C1A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="PG7-7K-lJ9"/>
+                            <constraint firstItem="ab5-2b-XU2" firstAttribute="top" secondItem="N6f-Kl-O55" secondAttribute="bottom" constant="62" id="V3i-JT-gGo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N6f-Kl-O55" secondAttribute="trailing" constant="8" id="gHy-We-ClX"/>
+                            <constraint firstItem="N6f-Kl-O55" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="354" id="lEC-bx-Gqc"/>
+                            <constraint firstItem="ab5-2b-XU2" firstAttribute="height" secondItem="N6f-Kl-O55" secondAttribute="height" id="nfI-yr-518"/>
+                            <constraint firstItem="ab5-2b-XU2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="wTv-eq-Kvu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6a-5c-C1A" secondAttribute="trailing" constant="8" id="xLI-29-d9P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="xei-1P-tNd" id="tHF-rL-rzB"/>
+                        <outlet property="textName" destination="rgA-fo-zrh" id="yw3-Q8-Qnz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
